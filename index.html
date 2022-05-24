@@ -1,0 +1,1286 @@
+<!-- <?php
+function getIp() {
+    if (! empty($_SERVER['HTTP_CLIENT_IP'])) {
+        return $_SERVER['HTTP_CLIENT_IP'];
+    } else if (! empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        return $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        return $_SERVER['REMOTE_ADDR'];
+    }
+}2
+
+$countryCodeToRedirect = 'RU';
+$redirectTo = 'https://logist-pro.ru';
+$pathToCheckIp = sprintf('http://www.geoplugin.net/json.gp?ip=%s', getIp());
+$data = @json_decode(file_get_contents($pathToCheckIp));
+
+if ($data->geoplugin_countryCode === $countryCodeToRedirect) {
+    header("Location: $redirectTo",true,301);
+    exit();
+}
+?> -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="facebook-domain-verification" content="35uvc9aiefm3o179hi74421fuzy2ts" />
+  <title>LogistPro is the best shipping logistics automation system. Reduce cargo shipping expenses by up to 30%,
+    increase safety and efficiency</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(86575873, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/86575873" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '383455380191401');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=383455380191401&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EXG2SL1XZN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-EXG2SL1XZN');
+  </script>
+</head>
+
+<body>
+  <main class="main">
+    <header class="header" id="header">
+      <div class="header__inner">
+        <div class="header-top">
+          <div class="container">
+            <div class="header-top__menu">
+              <div class="header-top__logo">
+                <img src="images/logo.svg" alt="image">
+              </div>
+              <div>
+                <a class="header-top__mail" href="mailto:alexandr.logvyn@s2b-group.net">
+                  alexandr.logvyn@s2b-group.net
+                </a>
+                <a class="header-top__tel" href="tel:41799139490">+41799139490</a>
+              </div>
+              <div class="header-top__connects">
+                <a class="header-top__btn" href="https://system.logist-pro.com/auth/login">LOG IN</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__offer">
+          <div class="container">
+            <h1 class="header__offer-title">
+              Shipping logistics
+              automation system <br>
+              <span>TMS LogistPRO</span>
+            </h1>
+            <p class="header__offer-subtitle">
+              Reduce cargo shipping expenses by up to 30%,
+              increase safety and efficiency
+            </p>
+            <div class="header__offer-wrapper">
+              <div class="header__offer-btn btn">
+                Get access
+              </div>
+              <p class="header__offer-free">
+                for 14 days <br>
+                for free
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <div class="header__item-img">
+                <img src="images/header-list/1.svg" alt="image">
+              </div>
+              <p class="header__item-text">
+                Work in the cloud
+                system is possible
+                from any device
+              </p>
+            </li>
+            <li class="header__list-item">
+              <div class="header__item-img">
+                <img src="images/header-list/2.svg" alt="image">
+              </div>
+              <p class="header__item-text">
+                More than 10,000
+                verified carriers
+                in the database.
+              </p>
+            </li>
+            <li class="header__list-item">
+              <div class="header__item-img">
+                <img src="images/header-list/3.svg" alt="image">
+              </div>
+              <p class="header__item-text">
+                Free testing within 14 days
+              </p>
+            </li>
+            <li class="header__list-item">
+              <div class="header__item-img">
+                <img src="images/header-list/4.svg" alt="image">
+              </div>
+              <p class="header__item-text">
+                Integration with all ERP systems
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bg-img">
+        <img class="" src="images/new-bg-2.jpg" alt="image">
+      </div>
+    </header>
+    <section class="benefits">
+      <div class="container">
+        <h2 class="benefits__title title">
+          How will your company benefit from using LogistPRO?
+        </h2>
+        <ul class="benefits__list">
+          <li class="benefits__list-item">
+            <img class="benefits__item-img" src="images/benefits/1.svg" alt="image">
+            <p class="benefits__item-text">
+              Saving up to 30% on shipping companies
+            </p>
+          </li>
+          <li class="benefits__list-item">
+            <img class="benefits__item-img" src="images/benefits/2.svg" alt="image">
+            <p class="benefits__item-text">
+              Security when working with carriers
+            </p>
+          </li>
+          <li class="benefits__list-item">
+            <img class="benefits__item-img" src="images/benefits/3.svg" alt="image">
+            <p class="benefits__item-text">
+              Increased efficiency of your employees
+            </p>
+          </li>
+          <li class="benefits__list-item">
+            <img class="benefits__item-img" src="images/benefits/4.svg" alt="image">
+            <p class="benefits__item-text">
+              Prompt communication with carriers
+            </p>
+          </li>
+          <li class="benefits__list-item">
+            <img class="benefits__item-img" src="images/benefits/5.svg" alt="image">
+            <p class="benefits__item-text">
+              Control over each stage of shipping
+            </p>
+          </li>
+          <li class="benefits__list-item">
+            <img class="benefits__item-img" src="images/benefits/6.svg" alt="image">
+            <p class="benefits__item-text">
+              Minimizing risks and errors when ordering transport
+            </p>
+          </li>
+          <li class="benefits__list-item">
+            <img class="benefits__item-img" src="images/benefits/7.svg" alt="image">
+            <p class="benefits__item-text">
+              Elimination of corruption component in relations with partners
+            </p>
+          </li>
+          <li class="benefits__list-item">
+            <img class="benefits__item-img" src="images/benefits/8.svg" alt="image">
+            <p class="benefits__item-text">
+              Attracting carriers at more favorable rates
+            </p>
+          </li>
+          <li class="benefits__list-item">
+            <img class="benefits__item-img" src="images/benefits/9.svg" alt="image">
+            <p class="benefits__item-text">
+              The best use of warehouse resources
+            </p>
+          </li>
+          <li class="benefits__list-item">
+            <img class="benefits__item-img" src="images/benefits/10.svg" alt="image">
+            <p class="benefits__item-text">
+              Secure data storage
+            </p>
+          </li>
+          <li class="benefits__list-item">
+            <img class="benefits__item-img" src="images/benefits/11.svg" alt="image">
+            <p class="benefits__item-text">
+              Possibility to analyze prices in the freight market
+            </p>
+          </li>
+          <li class="benefits__list-item">
+            <img class="benefits__item-img" src="images/benefits/12.svg" alt="image">
+            <p class="benefits__item-text">
+              Increasing the SLA level
+            </p>
+          </li>
+        </ul>
+        <div class="accent-block">
+          <h3 class="accent-block__title">
+            Optimize company logistics processes and save up to 30% of your shipping budget
+          </h3>
+          <p class="accent-block__subtitle">
+            Submit a request for an audit of the logistics of your business. We will determine what is wrong<br>
+            and find the best LogistPRO functionality.
+          </p>
+          <div class="accent-block__wrapper-btn">
+            <div class="accent-block__btn btn">Request</div>
+            <p class="accent-block__btn-text"> a free<br> audit</p>
+          </div>
+        </div>
+        <div class="video-block">
+          <div class="video-block__preview">
+            <a class='video-block__link' href="https://youtu.be/1zpSMQKXecg" data-fancybox></a>
+            <img src="images/video-img1.jpg" alt="image">
+          </div>
+          <div class="video-block__about">
+            <h2 class="video-block__title title">About the <span>LogistPRO</span></h2>
+            <p class="video-block__text">
+              The LogistPRO TMS was developed by S2B Group to simplify and automate the work of shippers.
+            </p>
+            <p class="video-block__text">
+              LogistPRO combines all the necessary tools for shipping logistics control, so you don’t have to use
+              additional services.
+            </p>
+            <p class="video-block__text">
+              Our approach greatly simplifies the tasks of searching reliable carriers and communicating with them,
+              organizing the process of loading and unloading goods, tracking them in transit, obtaining all analytical
+              data on cargo shipping, and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="possibilities">
+      <div class="container">
+        <h2 class="possibilities__title title">Basic features</h2>
+        <div class="possibilities__subtitle">Omit coordination of shipping orders by phone, mail and messengers</div>
+        <div class="possibilities__controls">
+          <div class="possibilities__controls-container swiper-wrapper">
+            <div class="possibilities__controls-item swiper-slide">
+              Automated <br> warehouse management
+            </div>
+            <div class="possibilities__controls-item swiper-slide">
+              Automated <br> ordering of transport
+            </div>
+            <div class="possibilities__controls-item swiper-slide">
+              Analytics <br> and accounting
+            </div>
+            <div class="possibilities__controls-item swiper-slide">
+              Search for <br> carriers
+            </div>
+            <div class="possibilities__controls-item swiper-slide">
+              Management of request <br> distribution settings
+            </div>
+            <div class="possibilities__controls-item swiper-slide">
+              Electronic <br> document management
+            </div>
+            <div class="possibilities__controls-item swiper-slide">
+              Tracking goods <br> in transit
+            </div>
+          </div>
+        </div>
+        <div class="swiper swiper-possibilities">
+          <div class="swiper-wrapper possibilities__swipe-container">
+            <div class="swiper-slide">
+              <div class="possibilities__item-wrapper">
+                <div class="possibilities__item-content">
+                  <h3 class="possibilities__item-title">
+                    Automated <br> warehouse management
+                  </h3>
+                  <ul class="possibilities__item-list">
+                    <li class="possibilities__item-item">
+                      You, the carrier, or your customer yourself reserve a time for loading, unloading, or pickup
+                      online;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Bookings schedule on the online board;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Reduction of time for loading and unloading;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Reduction of time for loading and unloading;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Full transparency and process control;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Display of the status of the movement of cars on the territory.
+                    </li>
+                  </ul>
+                </div>
+                <div class="possibilities__item-img">
+                  <img src="images/possibilities/6.jpg" alt="image">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="possibilities__item-wrapper">
+                <div class="possibilities__item-content">
+                  <h3 class="possibilities__item-title">
+                    Automated <br> ordering of transport
+                  </h3>
+                  <ul class="possibilities__item-list">
+                    <li class="possibilities__item-item">
+                      Requests for cargo shipping are allocated automatically according to specified criteria;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Transparent and secure pricing;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Exchange of documents and receipt of data in single-window mode;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Carrier himself enters all necessary data to confirm the execution of the request;
+                    </li>
+                    <li class="possibilities__item-item">
+                      System notifications on request distribution via Viber or e-mail;
+                    </li>
+                  </ul>
+                </div>
+                <div class="possibilities__item-img">
+                  <img src="images/possibilities/2.jpg" alt="image">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="possibilities__item-wrapper">
+                <div class="possibilities__item-content">
+                  <h3 class="possibilities__item-title">
+                    Analytics <br> and accounting
+                  </h3>
+                  <ul class="possibilities__item-list">
+                    <li class="possibilities__item-item">
+                      Uploading of analytical data at any stage of request approval and cargo shipping;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Soft spots control;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Generation of reports from an Excel Table or a diagram for process visualization;
+                    </li>
+                    <li class="possibilities__item-item">
+                      More than 70 reporting parameters;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Reports on employees’ work;
+                    </li>
+                    <li class="possibilities__item-item">
+                      History of request distribution.
+                    </li>
+                  </ul>
+                </div>
+                <div class="possibilities__item-img">
+                  <img src="images/possibilities/5.jpg" alt="image">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="possibilities__item-wrapper">
+                <div class="possibilities__item-content">
+                  <h3 class="possibilities__item-title">
+                    Search for <br> carriers
+                  </h3>
+                  <ul class="possibilities__item-list">
+                    <li class="possibilities__item-item">Easy and fast search for partners in the database of 10,000+
+                      carriers</li>
+                    <li class="possibilities__item-item">
+                      Possibility to receive price offers only from your pool of carriers.
+                    </li>
+                  </ul>
+                </div>
+                <div class="possibilities__item-img">
+                  <img src="images/possibilities/1.jpg" alt="image">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="possibilities__item-wrapper">
+                <div class="possibilities__item-content">
+                  <h3 class="possibilities__item-title">
+                    Management of request <br> distribution settings
+                  </h3>
+                  <ul class="possibilities__item-list">
+                    <li class="possibilities__item-item">
+                      SPOT bidding (reductions, auctions, bid collection)
+                    </li>
+                    <li class="possibilities__item-item">
+                      Request distribution between carriers at fixed rates;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Request distribution in manual mode.
+                    </li>
+                  </ul>
+                </div>
+                <div class="possibilities__item-img">
+                  <img src="images/possibilities/3.jpg" alt="image">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="possibilities__item-wrapper">
+                <div class="possibilities__item-content">
+                  <h3 class="possibilities__item-title">
+                    Electronic <br> document management
+                  </h3>
+                  <ul class="possibilities__item-list">
+                    <li class="possibilities__item-item">
+                      Forming a shipping order and receiving confirmation from the carrier in single-window mode;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Exchange of other documents with the carrier.
+                    </li>
+                  </ul>
+                </div>
+                <div class="possibilities__item-img">
+                  <img src="images/possibilities/4.jpg" alt="image">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="possibilities__item-wrapper">
+                <div class="possibilities__item-content">
+                  <h3 class="possibilities__item-title">
+                    Tracking goods <br> in transit
+                  </h3>
+                  <ul class="possibilities__item-list">
+                    <li class="possibilities__item-item">
+                      Recording deviations from the route;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Increasing SLA and reducing penalties for delays;
+                    </li>
+                    <li class="possibilities__item-item">
+                      Prompt reporting of problems en route and delays.
+                    </li>
+                  </ul>
+                </div>
+                <div class="possibilities__item-img">
+                  <img src="images/possibilities/7.jpg" alt="image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accent-block accent-block--wi">
+          <div class="accent-block__inner">
+            <div class="accent-block__content">
+              <h3 class="accent-block__title">
+                Make your shipping logistics management safe, easy and profitable with the LogistPRO cloud TMS.
+              </h3>
+              <p class="accent-block__subtitle">
+                Get 14 days free access to all LogistPRO features and see how efficient it is!
+              </p>
+              <div class="accent-block__wrapper-btn">
+                <div class="accent-block__btn btn">Get access</div>
+                <p class="accent-block__btn-text">for 14 days <br> for free</p>
+              </div>
+            </div>
+            <div class="accent-block__img">
+              <img src="images/accent-blockimg.png" alt="image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantage">
+      <div class="container">
+        <h2 class="advantage__title title">
+          The advantages of using the LogistPRO cloud TMS.
+        </h2>
+        <ul class="advantage__list">
+          <li class="advantage__item">
+            <div class="advantage__item-wrapper">
+              <div class="advantage__item-img">
+                <img src="images/advantage/1.svg" alt="image">
+              </div>
+              <h5 class="advantage__item-title">
+                Saving up to 30% of your shipping budget
+              </h5>
+            </div>
+            <p class="advantage__item-text">
+              You choose the carrier with the lowest rate, which saves you money
+            </p>
+          </li>
+          <li class="advantage__item">
+            <div class="advantage__item-wrapper">
+              <div class="advantage__item-img">
+                <img src="images/advantage/2.svg" alt="image">
+              </div>
+              <h5 class="advantage__item-title">
+                More than 10,000 verified carriers
+              </h5>
+            </div>
+            <p class="advantage__item-text">
+              All registered carriers are verified by the biggest shippers at LogistPRO
+            </p>
+          </li>
+          <li class="advantage__item">
+            <div class="advantage__item-wrapper">
+              <div class="advantage__item-img">
+                <img src="images/advantage/3.svg" alt="image">
+              </div>
+              <h5 class="advantage__item-title">
+                Access <br>
+                from anywhere
+              </h5>
+            </div>
+            <p class="advantage__item-text">
+              Manage cargo shipping with the LogistPRO cloud system anywhere, anytime
+            </p>
+          </li>
+          <li class="advantage__item">
+            <div class="advantage__item-wrapper">
+              <div class="advantage__item-img">
+                <img src="images/advantage/4.svg" alt="image">
+              </div>
+              <h5 class="advantage__item-title">
+                Free 14 days <br>
+                trial
+              </h5>
+            </div>
+            <p class="advantage__item-text">
+              Use all features of our cloud system and see how efficient it is
+            </p>
+          </li>
+          <li class="advantage__item">
+            <div class="advantage__item-wrapper">
+              <div class="advantage__item-img">
+                <img src="images/advantage/5.svg" alt="image">
+              </div>
+              <h5 class="advantage__item-title">
+                Free <br>
+                training
+              </h5>
+            </div>
+            <p class="advantage__item-text">
+              Personal manager will conduct qualified training on all the features of the system. The training lasts for
+              about an hour
+            </p>
+          </li>
+          <li class="advantage__item">
+            <div class="advantage__item-wrapper">
+              <div class="advantage__item-img">
+                <img src="images/advantage/6.svg" alt="image">
+              </div>
+              <h5 class="advantage__item-title">
+                Possibility <br>
+                of personal modifications
+              </h5>
+            </div>
+            <p class="advantage__item-text">
+              If necessary, we implement modifications to the system, taking into account the peculiarities of your
+              business processes
+            </p>
+          </li>
+          <li class="advantage__item">
+            <div class="advantage__item-wrapper">
+              <div class="advantage__item-img">
+                <img src="images/advantage/7.svg" alt="image">
+              </div>
+              <h5 class="advantage__item-title">
+                Different business models for connecting to the system
+              </h5>
+            </div>
+            <p class="advantage__item-text">
+              Use LogistPRO for as little as 3,600 hrivnas per month, based on the list of features you need. Pay only
+              for the features you use!
+            </p>
+          </li>
+          <li class="advantage__item">
+            <div class="advantage__item-wrapper">
+              <div class="advantage__item-img">
+                <img src="images/advantage/8.svg" alt="image">
+              </div>
+              <h5 class="advantage__item-title">
+                Integration with all ERP systems
+              </h5>
+            </div>
+            <p class="advantage__item-text">
+              With the help of API the system exchanges data with 1C, SAP, Oracle and other ERP
+            </p>
+          </li>
+        </ul>
+        <h2 class="advantage__title title">
+          More about LogistPRO
+        </h2>
+        <ul class="advantage__additional-list">
+          <li class="advantage__additional-item">
+            <img class="advantage__additional-item-img" src="images/advantage/additional/1.svg" alt="image">
+            <div class="advantage__additional-inner">
+              <h5 class="advantage__additional-title">
+                12 years of experience in developing logistics solutions
+              </h5>
+              <p class="advantage__additional-text">
+                The company’s employees have extensive experience in logistics.
+              </p>
+            </div>
+          </li>
+          <li class="advantage__additional-item">
+            <img class="advantage__additional-item-img" src="images/advantage/additional/2.svg" alt="image">
+            <div class="advantage__additional-inner">
+              <h5 class="advantage__additional-title">
+                Safe and transparent work with partners
+              </h5>
+              <p class="advantage__additional-text">
+                Possibility to work with a specific portfolio of carriers
+              </p>
+            </div>
+          </li>
+          <li class="advantage__additional-item">
+            <img class="advantage__additional-item-img" src="images/advantage/additional/3.svg" alt="image">
+            <div class="advantage__additional-inner">
+              <h5 class="advantage__additional-title">
+                Easy to use
+              </h5>
+              <p class="advantage__additional-text">
+                Manage your logistics from any device - PC, tablet, laptop or telephone
+              </p>
+            </div>
+          </li>
+          <li class="advantage__additional-item">
+            <img class="advantage__additional-item-img" src="images/advantage/additional/4.svg" alt="image">
+            <div class="advantage__additional-inner">
+              <h5 class="advantage__additional-title">
+                Unlimited number of users
+              </h5>
+              <p class="advantage__additional-text">
+                LogistPro can be used by an unlimited number of users of your company with unique roles and access
+              </p>
+            </div>
+          </li>
+          <li class="advantage__additional-item">
+            <img class="advantage__additional-item-img" src="images/advantage/additional/5.svg" alt="image">
+            <div class="advantage__additional-inner">
+              <h5 class="advantage__additional-title">
+                Logistics audit
+              </h5>
+              <p class="advantage__additional-text">
+                Sore spots of the organization of cargo shipping;
+              </p>
+            </div>
+          </li>
+          <li class="advantage__additional-item">
+            <img class="advantage__additional-item-img" src="images/advantage/additional/6.svg" alt="image">
+            <div class="advantage__additional-inner">
+              <h5 class="advantage__additional-title">
+                Regular updates
+              </h5>
+              <p class="advantage__additional-text">
+                High dynamics of solution development
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="container">
+      <div class="accent-block">
+        <h3 class="accent-block__title">
+          Use the LogistPRO cloud system and make your logistics more efficient
+        </h3>
+        <p class="accent-block__subtitle">
+          The service of high quality will increase SLA and enhance the prestige of your company
+        </p>
+        <div class="accent-block__btn btn">Get a free consultation</div>
+      </div>
+    </div>
+    <section class="access">
+      <div class="container">
+        <h2 class="access__title title">
+          How to get access to LogistPRO?
+        </h2>
+        <ul class="access__list">
+          <li class="access__list-item">
+            <img class="access__item-img" src="images/access/1.svg" alt="image">
+            <div class="access__item-title"><span>1.</span> Request</div>
+            <p class="access__item-text">
+              Submit a request on the website, make a call<br>
+              <span>+41799139490;</span><br>
+              or mail alexandr.logvyn@s2b-group.net
+            </p>
+          </li>
+          <li class="access__list-item">
+            <img class="access__item-img" src="images/access/2.svg" alt="image">
+            <div class="access__item-title"><span>2.</span> Consultation</div>
+            <p class="access__item-text">
+              Our manager will contact you and answer all your questions
+            </p>
+          </li>
+          <li class="access__list-item">
+            <img class="access__item-img" src="images/access/3.svg" alt="image">
+            <div class="access__item-title"><span>3.</span> Creating Dashboard and training</div>
+            <p class="access__item-text">
+              We will create an account for your company, make all the necessary setups and promptly conduct training
+              for employees
+            </p>
+          </li>
+          <li class="access__list-item">
+            <img class="access__item-img" src="images/access/4.svg" alt="image">
+            <div class="access__item-title"><span>4.</span> Integration with ERP</div>
+            <p class="access__item-text">
+              If necessary, we will synchronize LogistPRO with your ERP system. Implementation period is up to two weeks
+            </p>
+          </li>
+          <li class="access__list-item">
+            <img class="access__item-img" src="images/access/5.svg" alt="image">
+            <div class="access__item-title"><span>5.</span> Free trial</div>
+            <p class="access__item-text">
+              Use the LogistPRO cloud system for 14 days, see how effective it is, and record your first savings
+            </p>
+          </li>
+          <li class="access__list-item">
+            <img class="access__item-img" src="images/access/6.svg" alt="image">
+            <div class="access__item-title"><span>6.</span> Flexible terms of cooperation</div>
+            <p class="access__item-text">
+              Personal manager will help to determine the best business model of cooperation
+            </p>
+          </li>
+          <li class="access__list-item">
+            <img class="access__item-img" src="images/access/7.svg" alt="image">
+            <div class="access__item-title"><span>7.</span> Use and results</div>
+            <p class="access__item-text">
+              Simplify and automate your shipping logistics and save up to 30% of your company’s shipping budget!
+            </p>
+          </li>
+          <li class="access__list-item">
+            <div class="btn">Get access</div>
+            <div class="btn-text">for 14 days for free</div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <section class="indicators">
+      <div class="container">
+        <div class="indicators__block">
+          <h2 class="indicators__block-title title">
+            <span>How can the performance change</span> <br>
+            when using LogistPRO?
+          </h2>
+          <ul class="indicators__block-list">
+            <li class="indicators__block-item">
+              Reduction of shipping costs starting from 10% in the 1st month of use
+            </li>
+            <li class="indicators__block-item">
+              Total reduction of shipping costs up to 30%
+            </li>
+            <li class="indicators__block-item">
+              Reduction of employees’ labor expenses by up to 25%
+            </li>
+          </ul>
+        </div>
+
+        <h2 class="indicators__title title">
+          How do I work with LogistPRO?
+        </h2>
+        <ol class="indicators__list">
+          <li class="indicators__list-item">
+            Create a request for cargo shipping
+          </li>
+          <li class="indicators__list-item">
+            In automatic mode, conduct SPOT bidding or distribute at previously agreed rates
+          </li>
+          <li class="indicators__list-item">
+            Select the best rate offers
+          </li>
+          <li class="indicators__list-item">
+            Get driver and vehicle information in the system
+          </li>
+          <li class="indicators__list-item">
+            Exchange a signed request with the carrier and get confirmation
+          </li>
+          <li class="indicators__list-item">
+            Generate loading and unloading slots automatically
+          </li>
+          <li class="indicators__list-item">
+            Track the movement of cargo along a given route
+          </li>
+          <li class="indicators__list-item">
+            Get closing documents from the carrier
+          </li>
+        </ol>
+
+        <div class="accent-block">
+          <h3 class="accent-block__title">
+            Find new reliable partners. There are more than 10,000 verified carriers in the LogistPRO system.
+          </h3>
+          <p class="accent-block__subtitle">
+            Get cargo shipping offers at the best prices and reduce your expenses by up to 30%!
+          </p>
+          <div class="accent-block__btn btn">Test LogistPro for free</div>
+        </div>
+
+        <div class="video-block video-block--2">
+          <div class="video-block__preview">
+            <img src="images/video-img2.jpg" alt="image">
+          </div>
+          <div class="video-block__about">
+            <h2 class="video-block__title title">About the LogistPRO System</h2>
+            <p class="video-block__text">
+              S2B Group has more than 12 years of experience in the development and implementation of IT-products for
+              shipping logistics. Our in-depth expertise in all aspects of logistics and our partnerships with major
+              manufacturing companies allow us to develop the most effective possible solution – the LogistPRO TMS.
+            </p>
+            <p class="video-block__text">
+              Our entire team has extensive experience in the field of logistics. We know exactly the needs and sore
+              spots of the shipping logistics market.
+            </p>
+          </div>
+        </div>
+        <h2 class="title">About us in figures</h2>
+        <ul class="indicators__num-list">
+          <li class="indicators__num-item">
+            <div class="indicators__num-num">>15 000</div>
+            <div class="indicators__num-text">
+              reliable carriers <br>
+              in the system
+            </div>
+          </li>
+          <li class="indicators__num-item">
+            <div class="indicators__num-num">>120</div>
+            <div class="indicators__num-text">
+              shippers in Ukraine <br>
+              use our approach
+            </div>
+          </li>
+          <li class="indicators__num-item">
+            <div class="indicators__num-num">>80 000</div>
+            <div class="indicators__num-text">
+              shipments per month runs through <br>
+              the LogistPRO TMS
+            </div>
+          </li>
+          <li class="indicators__num-item">
+            <div class="indicators__num-num">>50</div>
+            <div class="indicators__num-text">
+              employees <br>
+              works for our company
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <h2 class="team__title title">
+          Our Team
+        </h2>
+        <div class="swiper swiper-team">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="team__item">
+                <div class="team__item-img" style="background-image: url('images/team/1.jpeg');">
+                </div>
+                <div class="team__item-info">
+                  <div class="team__item-name">
+                    Alexander Logvin
+                    <span>Chief Executive Officer (CEO)</span>
+                  </div>
+                  <div class="team__item-description">
+                    The founder and the owner of the company. The professional goal is to use managerial experience to help companies
+                    grow.
+                  </div>
+                </div>
+              </div>   
+            </div>
+            <div class="swiper-slide">           
+              <div class="team__item">
+                <div class="team__item-img" style="background-image: url('images/team/2.jpeg');">
+                </div>
+                <div class="team__item-info">
+                  <div class="team__item-name">
+                    Evgenia Plotnikova
+                    <span>Chief Operating Officer (СОО)</span>
+                  </div>
+                  <div class="team__item-description">
+                    Control and management of the company’s operational activities
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="team__item">
+                <div class="team__item-img" style="background-image: url('images/team/3.jpeg');">
+                </div>
+                <div class="team__item-info">
+                  <div class="team__item-name">
+                    Evgeny Logvin
+                    <span>Chief technical officer (CTO)</span>
+                  </div>
+                  <div class="team__item-description">
+                    Management of the technical team, developers and user support
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="team__item">
+                <div class="team__item-img" style="background-image: url('images/team/4.jpeg');">
+                </div>
+                <div class="team__item-info">
+                  <div class="team__item-name">
+                    Daria Lebedeva
+                    <span>Chief Marketing Officer (CMO)</span>
+                  </div>
+                  <div class="team__item-description">
+                    Management of the Marketing department, strategy development, advertising and PR
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="team__item">
+                <div class="team__item-img" style="background-image: url('images/team/5.jpeg');">
+                </div>
+                <div class="team__item-info">
+                  <div class="team__item-name">
+                    Olga Zabavskaya
+                    <span>Head of Sale</span>
+                  </div>
+                  <div class="team__item-description">
+                    Sales team management, active sales
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination pagination-team"></div>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="container">
+        <h2 class="clients__title title">
+          Our clients
+        </h2>
+        <div class="swiper swiper-clients">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/1.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/2.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/3.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/4.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/5.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/6.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/7.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/8.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/9.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/10.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/11.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/12.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/13.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/14.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/15.png" alt="image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clients__item-slide">
+                <img src="images/clients/16.png" alt="image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination pagination-clients"></div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="accent-block">
+          <h3 class="accent-block__title">
+            Start using the LogistPRO cloud TMS! It can help reduce labor expenses by up to 25% and cargo shipping
+            expenses by up to 30%
+          </h3>
+          <p class="accent-block__subtitle">
+            Submit a request and we’ll find the best settings to suit your business needs
+          </p>
+          <div class="accent-block__wrapper-btn">
+            <div class="accent-block__btn btn">Submit a request</div>
+            <p class="accent-block__btn-text accent-block__br">
+              for a free selection <br>
+              of LogistPRO modules
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container">
+        <h2 class="faq__title title">FAQ</h2>
+        <ul class="faq__list">
+          <li class="faq__list-item">
+            <div class="faq__item-trigger">
+              At what volume of shipment is it better to use a cloud TMS?
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_589:1094)">
+                  <path d="M14 4.3256L12.3491 2.6748L7 8.02395L1.65086 2.6748L3.83438e-06 4.3256L7 11.3256L14 4.3256Z"
+                    fill="#332B40" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_589:1094">
+                    <rect width="14" height="14" fill="white" transform="translate(14) rotate(90)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="faq__item-content">
+              It is never too late to start using our approach. But as soon as you start shipping more than 2,000 tons
+              a month - It's time!
+            </div>
+          </li>
+          <li class="faq__list-item">
+            <div class="faq__item-trigger">
+              What is the working hours of your Technical Support?
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_589:1094)">
+                  <path d="M14 4.3256L12.3491 2.6748L7 8.02395L1.65086 2.6748L3.83438e-06 4.3256L7 11.3256L14 4.3256Z"
+                    fill="#332B40" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_589:1094">
+                    <rect width="14" height="14" fill="white" transform="translate(14) rotate(90)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="faq__item-content">
+              Technical Support is available from 9 a.m. to 7 p.m., daily, unless otherwise agreed
+            </div>
+          </li>
+          <li class="faq__list-item">
+            <div class="faq__item-trigger">
+              Which departments can work in the LogistPRO system?
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_589:1094)">
+                  <path d="M14 4.3256L12.3491 2.6748L7 8.02395L1.65086 2.6748L3.83438e-06 4.3256L7 11.3256L14 4.3256Z"
+                    fill="#332B40" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_589:1094">
+                    <rect width="14" height="14" fill="white" transform="translate(14) rotate(90)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="faq__item-content">
+              The system provides for the selection of roles for employees working in the system. Representatives of any
+              department in the enterprise can work in the system.
+            </div>
+          </li>
+          <li class="faq__list-item">
+            <div class="faq__item-trigger">
+              What will I learn during my free training?
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_589:1094)">
+                  <path d="M14 4.3256L12.3491 2.6748L7 8.02395L1.65086 2.6748L3.83438e-06 4.3256L7 11.3256L14 4.3256Z"
+                    fill="#332B40" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_589:1094">
+                    <rect width="14" height="14" fill="white" transform="translate(14) rotate(90)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="faq__item-content">
+              In order to work effectively, it is essential to learned and gain experience. We offer training by your
+              personal manager and further support to address operational issues
+            </div>
+          </li>
+          <li class="faq__list-item">
+            <div class="faq__item-trigger">
+              Can I offer the request to all carriers, not just my own ones?
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_589:1094)">
+                  <path d="M14 4.3256L12.3491 2.6748L7 8.02395L1.65086 2.6748L3.83438e-06 4.3256L7 11.3256L14 4.3256Z"
+                    fill="#332B40" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_589:1094">
+                    <rect width="14" height="14" fill="white" transform="translate(14) rotate(90)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="faq__item-content">
+              We are always in favor of job security. It is important for us. You work with your own, verified carriers.
+            </div>
+          </li>
+        </ul>
+
+        <div class="accent-block">
+          <h3 class="accent-block__title">
+            Make your company’s logistics transparent, profitable and efficient with the LogistPRO cloud automation TMS.
+          </h3>
+          <p class="accent-block__subtitle">
+            Our cloud approach integrates with all kinds of ERP systems and is adapted to any device
+          </p>
+          <div class="accent-block__wrapper-btn">
+            <div class="accent-block__btn btn">Get access</div>
+            <p class="accent-block__btn-text">
+              for 14 days for free
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <h2 class="footer__title">
+            Have questions?
+          </h2>
+          <div class="footer__subtitle">
+            Ask them any way you want:
+          </div>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <div class="footer__item-name footer__item-name--tel ">Call us:</div>
+              <div class="footer__item-tel">+41799139490</div>
+              <div class="footer__item-btn btn">Order a call</div>
+            </li>
+            <li class="footer__list-item">
+              <div class="footer__item-name footer__item-name--email">Mail us:</div>
+              <div class="footer__item-email">alexandr.logvyn@s2b-group.net</div>
+              <!-- <div class="footer__item-descr">
+                или в службу технической поддержки:
+                Написать в службу поддержки
+              </div> -->
+            </li>
+            <!-- <li class="footer__list-item">
+              <div class="footer__item-name footer__item-name--address">Visit us at the address:</div>
+              <div class="footer__item-address">
+                122 Kazatskaya St., <br> Kiev, Ukraine
+              </div>
+            </li> -->
+          </ul>
+        </div>
+        <!-- <div class="footer__map-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.0647558480473!2d30.487977410926177!3d50.397321076784785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8d05388b389%3A0x92617cc6f266535a!2z0YPQuy4g0JrQsNC30LDRhtC60LDRjywgMTIyLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1637407796802!5m2!1sru!2sua"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div> -->
+      </div>
+    </footer>
+
+    <div class="popup">
+      <div class="popup_container">
+        <div class="popup_close">+</div>
+        <div class="popup_title">Contact us</div>
+        <form method="post" class="send_mail_form" data-remote="true">
+          <input class="popup_phone" type="text" name="name" placeholder="Name*" required>
+          <input class="popup_phone" type="text" name="phone" placeholder="Telephone number">
+          <input class="popup_phone" type="email" name="email" placeholder="E-mail*" required>
+          <input class="popup_phone" type="text" name="company" placeholder="Company name">
+          <button class="popup_button btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    $(".btn").click(function () {
+      ym(86575873, 'reachGoal', 'open_popup');
+      gtag('event', 'open_form_popup')
+    })
+  </script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
